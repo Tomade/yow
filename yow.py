@@ -5,6 +5,8 @@ import http.server
 class handler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         quote = random.choice(quotes)
+        self.send_response(200)
+        self.end_headers()
         self.request.sendall(quote.encode())
 
 
