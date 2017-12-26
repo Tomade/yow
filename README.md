@@ -8,13 +8,13 @@
 ### In a container:
 
 1. Build image with `docker build -t yow .`
-- Run with `docker run -d -p8080:8080 yow`
+2. Run with `docker run -d -p8080:8080 yow`
 
 ## To use:
 
 1. curl localhost:8080
-- enjoy!
-- go back to step 1
+2. enjoy!
+3. go back to step 1
 
 
 
