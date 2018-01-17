@@ -9,6 +9,9 @@ class handler(http.server.BaseHTTPRequestHandler):
         self.end_headers()
         self.request.sendall(quote.encode())
 
+    def log_message(self, format, *args):
+        return
+
 
 quotes = open('zippy').read().split('%\n')
 server = http.server.HTTPServer(('', 8080), handler)
